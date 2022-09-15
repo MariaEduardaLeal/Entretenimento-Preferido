@@ -1,0 +1,114 @@
+
+
+*{ /*tirando coisas que tem pro padrão no navegador*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+header img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #FC72DE 0%, #E74343 50.52%, #59239D 100%);
+ 
+}
+
+body{
+    background-image: url(./assets/gb.jpg);/*Falar em que lugar do mundo está a imagem*/
+    background-position: top center;/*Posicionamento do funfo, nesse caso ele começa do topo e fica centralizado*/
+    background-size: 100% auto;/*Conforme a tela vai mundando o 100% irá refletir o tamanho da tela e o auto reflete o tamanho, que nesse caso ficou automatico*/
+    background-repeat: no-repeat;/*Não repetir o background*/
+    background-color: #111C30;/*defini a cor da página*/
+}
+
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main{
+    max-width: 580px; /*define a lárgura máxima de todas as coisas que exitem dentro do main*/
+    width: 90%;/*Quando a tela for menor que 580px então a largura será relativo a 90% da tela do usuário*/
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    /*Tám pode ser feito da seguinte maneira
+    display: grip;
+    gap: 24px*/
+
+    margin-top: 32px;
+}
+
+
+
+section{
+    color: white;
+    padding-top: 4px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    box-shadow: 0 0 #FC72DE;
+    scroll-snap-type: x mandatory;
+}
+
+section::-webkit-scrollbar{
+    width: 10px;
+    /*border:  linear-gradient(90deg, #fc72de27 0%, #e7434331 50.52%, #5a239d3b 100%);*/
+}
+section::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(90deg, #fc72de27 0%, #e7434331 50.52%, #5a239d3b 100%);
+    border-radius: 10px;
+}
+section div{
+    background-image: linear-gradient(90deg, #fc72de27 0%, #e7434331 50.52%, #5a239d3b 100%);
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    flex: none;
+    scroll-snap-align: start;
+}
+
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+letter-spacing: -0.18px;
+color: #A1A1AA;
+}
+
+section ul{
+    display: flex; /*Ao ser aplicada em um elemento, reorganiza todos os elementos dentro dele para que fiquem lado a lado horizontalmente.*/
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    margin-top: 24px;
+}
+
+
+
+.filme-list img{
+    width: 160px;
+    border-radius: 5px;
+}
+
+.serie-list img{
+    width: 160px;
+    border-radius: 5px;
+}
+
+.anime-list img{
+    width: 160px;
+    border-radius: 5px;
+}
